@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TAMBAH DATA</title>
+        <title>EDIT DATA</title>
 
         <link href="<?php echo base_url('assets/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet" />
     </head>
@@ -33,41 +33,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="alert alert-info" role="alert" style="text-align: center;">
             <b>Canggih Wahyu Rinaldi / 1901050017</b>
         </div>
-
         <div class="card">
             <div class="card-header">
                 Tambah Data
             </div>
-            <form action="<?=site_url('AController/proses')?>" method="post" class="container-md">
+            <form action="<?=site_url('AController/proses_edit')?>" method="post" class="container-md">
                 <div class="card-body">
                     <table width="40%">
                     <tbody class="form-group">
                         <tr>
                             <td><label for=""> ID_BARANG[017] </label></td>
-                            <td><input type="text" name="tid" class="form-control"><br></td>
+                            <td><input type="text" name="tid" class="form-control" value="<?= $brg['id_017'] ?>"><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="">Merek</label></td>
-                            <td><input type="text" name="tmerek" class="form-control"><br></td>
+                            <td><input type="text" name="tmerek" class="form-control" value="<?= $brg['merek'] ?>"><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="">Jenis</label></td>
-                            <td><input type="text" name="tjenis" class="form-control"><br></td>
+                            <td><input type="text" name="tjenis" class="form-control" value="<?= $brg['jenis'] ?>"><br></td>
                         </tr>
 
                         <tr>
                             <td><label for="">Stok</label></td>
-                            <td><input type="text" name="tstok" class="form-control"><br></td>
+                            <td><input type="text" name="tstok" class="form-control" value="<?= $brg['stok'] ?>"><br></td>
                         </tr>
                     </tbody>
                     </table>
                 </div>
                 
 
-                <input type="submit" name="submit" value="Simpan" class="btn btn-primary">
-                <a href="<?= site_url('AController/index') ?>" class="btn btn-warning">Batal</a>
+                <input type="submit" name="edit" value="Simpan" class="btn btn-primary">
+                <a href="<?= site_url('AController/index
+                ') ?>" class="btn btn-warning">Batal</a>
             </form>
             <br>
         </div>
