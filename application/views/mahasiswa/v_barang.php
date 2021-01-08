@@ -1,6 +1,9 @@
         <div class="card">
             <div class="card-header">
                 Data Barang
+                <a href="<?= site_url('Front/index') ?>" class="btn btn-warning float-right">
+                <strong>LOG OUT</strong> 
+            </a>
             </div>
             <div class="card-body">
                 <div class="">
